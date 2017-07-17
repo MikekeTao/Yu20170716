@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.baway.yuwentao.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFffff"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/btn_back_fragment_shopcar"
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:contentDescription="@null"
+            android:padding="15dp">
+
+        </ImageView>
+        <!--  此处购物车需要获取物品数量，后期要动态设置 -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            android:textColor="#000000"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/tv_fragment_shopcar_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="编辑"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <!-- 这个就是这个界面的主角购物呀，伙计们 -->
+    <ListView
+        android:id="@+id/lv_fragment_shopcar_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/total_check_fragment_shopcar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:id="@+id/tv_fragment_shopcar_text02"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/total_check_fragment_shopcar"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:textColor="#656565"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_fragment_shopcar_text01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="180dp"
+            android:gravity="center_vertical"
+            android:text="合计"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_fragment_shopcar_total_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="118dp"
+            android:gravity="center_vertical"
+            android:textColor="#00802d"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_fragment_shopcar_pushsum"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ffffff"
+            android:paddingBottom="18dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="18dp"
+            android:text="结算"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</LinearLayout>
