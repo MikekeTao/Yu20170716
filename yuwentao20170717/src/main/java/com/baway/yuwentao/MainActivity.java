@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // 合计积分花费，我们要花多少钱都在这里啦，多少妹子月末总想着这个数字，哇哈哈
     private int totalpv = 0;
     /**
-     * 观察者模式，监听listview的数据变换，学了这么久的架构，第一次用上观察者模式，幸福哈哈。观察，就是把关，妹子不舒服了就关心下
+     * 观察者模式，监听listview的数据变换，dfdf 学了这么久的架构，第一次用上观察者模式，幸福哈哈。观察，就是把关，妹子不舒服了就关心下
      */
     private DataSetObserver sumObserver = new DataSetObserver() {
         /**
